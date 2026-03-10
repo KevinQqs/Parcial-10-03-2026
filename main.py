@@ -4,12 +4,6 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
 class Material(Enum):
     bronce = auto()
     plata = auto()
